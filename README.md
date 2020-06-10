@@ -1,5 +1,5 @@
 # Edge-Orchestration-and-ML
-This part of the github repo contains implementation of our docker images on edge-orchestration. To run this part of project follow the process:
+This part of the github repo contains implementation of our docker images on edge-orchestration(check other repo https://github.com/animeshjain2/person-s-age-detection). To run this part of project follow the process:
 
 1.Install Docker from https://get.docker.com/. Just run the curl and shell Command(Always update after 1.5 month).
 
