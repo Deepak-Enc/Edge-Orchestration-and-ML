@@ -9,7 +9,7 @@ This part of the github repo contains implementation of our docker images on edg
 
 4.Create orchestration_userID.txt in /var/edge-orchestration/user directory and save Test in it then cretae orchestration_deviceID.txt in /var/edge-orchestration/device and save 7e841a12-a083-48fe-8040-83815e0b7410 in it.
 
-5.After that install and setup edge-orchestration from https://github.com/lf-edge/edge-home-orchestration-go/blob/master/doc/platforms/x86_64_linux/x86_64_linux.md.
+5.After that install and setup edge-orchestration from https://github.com/lf-edge/edge-home-orchestration-go/tree/Baobab
 
 6.Pull Images from dockerhub https://hub.docker.com/r/animeshj123/age_det_image/tags for real time and video.
 
