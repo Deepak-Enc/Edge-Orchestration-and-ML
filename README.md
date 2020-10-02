@@ -21,7 +21,20 @@ This part of the github repo contains implementation of our docker images on edg
 	
 8. Run the service with api on Edge-orchestration:
 
-curl -X POST "192.168.0.103:56001/api/v1/orchestration/services" -H "accept: application/json" -H "Content-Type: application/json" -d "{ \"ServiceName\": \"age_detection\", \"ServiceInfo\": [{ \"ExecutionType\": \"container\", \"ExecCmd\": [ \"docker\", \"run\", \"-it\",\"--rm\",\"--device=/dev/video0\", \"--net=host\",\"--ipc=host\", \"-e\",\"DISPLAY=$DISPLAY\",\"-v\",\"/tmp/.X11-unix:/tmp/.X11-unix\",\"-e\",\"QT_X11_NO_MITSHM=1\",\"animeshj123/age_det_image:02\"]}], \"StatusCallbackURI\": \"http://192.168.0.103:8888/api/v1/services/notification\"}"
+curl -X POST "192.168.0.103:56001/api/v1/orchestration/services" -H "accept: application/json" -H "Content-Type: application/json" -d "
+{ 
+\"ServiceName\": \"age_detection\", 
+\"ServiceInfo\": 
+[
+{
+ \"ExecutionType\": \"container\",
+ \"ExecCmd\": 
+[ \"docker\", \"run\", \"-it\",\"--rm\",\"--device=/dev/video0\", \"--net=host\",\"--ipc=host\", \"-e\",\"DISPLAY=$DISPLAY\",\"-v\",\"/tmp/.X11-unix:/tmp/.X11-unix\",\"-e\",\"QT_X11_NO_MITSHM=1\",\"animeshj123/age_det_image:02\"
+]
+}
+], 
+\"StatusCallbackURI\": \"http://192.168.0.103:8888/api/v1/services/notification\"
+}"
 
 	 
 9. Results:
